@@ -1,0 +1,17 @@
+import javax.swing.*;
+
+public class twelbe {
+    public static void main(String[] args) {
+        int[] arr = {3, 7, 7, 5, 7, 2};
+        int target = Integer.parseInt(JOptionPane.showInputDialog("Enter number to check:"));
+        int count = 0;
+
+        for (int n : arr) {
+            if (n == target) count++;
+        }
+
+        boolean appears3 = count >= 3;
+
+        JOptionPane.showMessageDialog(null, "Appears at least 3 times? " + appears3);
+    }
+}
