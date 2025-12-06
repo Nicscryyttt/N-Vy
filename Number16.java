@@ -1,0 +1,11 @@
+import javax.swing.*;
+
+public class veloz16 {
+    public static void main(String[] args) {
+        String num = JOptionPane.showInputDialog("Enter a number:");
+
+        int digits = num.startsWith("-") ? num.length() - 1 : num.length();
+
+        JOptionPane.showMessageDialog(null, "Number of digits: " + digits);
+    }
+}
