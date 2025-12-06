@@ -1,0 +1,18 @@
+import javax.swing.*;
+
+public class veloz15 {
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+
+        for (int i = 0; i < 5; i++) {
+            arr[i] = Integer.parseInt(JOptionPane.showInputDialog("Enter number " + (i + 1)));
+        }
+
+        String result = "";
+        for (int n : arr) {
+            if (n > 50) result += n + " ";
+        }
+
+        JOptionPane.showMessageDialog(null, "Numbers greater than 50:\n" + result);
+    }
+}
